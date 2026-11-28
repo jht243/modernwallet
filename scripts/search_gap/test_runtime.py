@@ -810,4 +810,75 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
         packet = {'site': 'one.test', 'runId': 'run-pending', 'candidates': [{'id': 'c1'}]}
         self.assertEqual(worker.retained_local_completion(packet, intake_hash), ('reports/search-gap/run-pending/completion.json', []))
 
+    def test_completion_recovery_and_preserved_evidence_accept_pending_decisions_transition(self):
+        root = Path(self.tmp.name)
+        subprocess.run(['git', 'init', '-q', str(root)], check=True)
+        comp_dir = root / 'reports/search-gap/run-pending-rec'
+        comp_dir.mkdir(parents=True)
+        chart = comp_dir / 'chart.md'
+        chart.write_text('# Chart\n')
+        pending = [{'id': 'c1', 'status': 'pending', 'paths': ['/guides/x'], 'reason': 'Draft prepared and awaiting live verification.'}]
+        published = [{'id': 'c1', 'status': 'published', 'paths': ['/guides/x'], 'reason': 'Draft prepared and awaiting live verification.'}]
+        receipt = comp_dir / 'chart-review.json'
+        packet_obj = {'ok': True, 'site': 'one.test', 'runId': 'run-pending-rec', 'candidates': [{'id': 'c1', 'term': 'x', 'eventIds': ['e1']}]}
+        intake_path = root / 'reports/search-gap/intake-pending-rec.json'
+        intake_path.write_text(json.dumps(packet_obj))
+        intake_hash = worker.digest(intake_path)
+        receipt.write_text(json.dumps({
+            'author': 'writer-1', 'reviewer': 'reviewer-1', 'verdict': 'PASS',
+            'chartSha256': worker.digest(chart), 'intakeSha256': intake_hash,
+            'decisionsSha256': hashlib.sha256(json.dumps(pending, sort_keys=True).encode()).hexdigest(),
+            'pendingDecisions': pending,
+        }))
+        completion = comp_dir / 'completion.json'
+        completion.write_text(json.dumps({
+            'site': 'one.test', 'runId': 'run-pending-rec', 'intakeSha256': intake_hash,
+            'chart': 'reports/search-gap/run-pending-rec/chart.md',
+            'chartReview': 'reports/search-gap/run-pending-rec/chart-review.json',
+            'decisions': published,
+        }))
+        comp_sha = worker.digest(completion)
+        class RecoveryStore:
+            def pending(self, site): return []
+            def claim_job(self, site, owner, raw):
+                return {
+                    'status': 'claimed',
+                    'runId': 'run-pending-rec',
+                    'packetText': intake_path.read_text(),
+                    'packetSha256': intake_hash,
+                    'checkpoints': [{
+                        'stage': 'completion-recovery',
+                        'completionFile': 'reports/search-gap/run-pending-rec/completion.json',
+                        'artifacts': [{'path': 'reports/search-gap/run-pending-rec/completion.json', 'sha256': comp_sha, 'base64': __import__('base64').b64encode(completion.read_bytes()).decode()}],
+                    }],
+                }
+            def owner_policy(self, site): return True
+            def owner_request_sha(self, site, run): return None
+            def heartbeat_job(self, site, run, owner): return {'ok': True}
+            def release_job(self, site, run, owner): return None
+        res = worker.intake('one.test', RecoveryStore(), str(intake_path), 'owner-1234567890abcdef')
+        self.assertEqual(res['recoverySummary']['completionFile'], 'reports/search-gap/run-pending-rec/completion.json')
+
+        # preserved_evidence.restore also accepts approved pending -> published transitions
+        import preserved_evidence
+        subprocess.run(['git', 'config', 'user.email', 'test@example.com'], cwd=root, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Test'], cwd=root, check=True)
+        subprocess.run(['git', 'add', '.'], cwd=root, check=True)
+        subprocess.run(['git', 'commit', '-q', '-m', 'add evidence'], cwd=root, check=True)
+        rev = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
+        (root / '.claude').mkdir(parents=True, exist_ok=True)
+        (root / '.claude/search-gap-recovery-sources.json').write_text(json.dumps({
+            intake_hash: {
+                'site': 'one.test',
+                'runId': 'run-pending-rec',
+                'commits': [rev],
+                'completion': 'reports/search-gap/run-pending-rec/completion.json',
+                'files': [],
+            }
+        }))
+        self.assertEqual(
+            preserved_evidence.restore(root, packet_obj, intake_hash),
+            {'completionFile': 'reports/search-gap/run-pending-rec/completion.json', 'completionSourceCommit': rev},
+        )
+
 if __name__=='__main__':unittest.main()

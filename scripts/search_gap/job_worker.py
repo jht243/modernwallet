@@ -274,7 +274,7 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                         and completion['intakeSha256'] == digest(path), 'Recovered completion identity changed')
                 receipt = read(artifact_path(completion['chartReview']))
                 require(receipt.get('verdict') == 'PASS' and receipt.get('chartSha256') == digest(completion['chart'])
-                        and receipt.get('decisionsSha256') == hashlib.sha256(json.dumps(completion['decisions'],sort_keys=True).encode()).hexdigest(),
+                        and native.decisions_match_review(receipt, completion['decisions']),
                         'Decisions differ from the retained independent judgment')
                 summary['completionFile'] = name
         if resumed and checkpoints and not summary.get('completionFile'):

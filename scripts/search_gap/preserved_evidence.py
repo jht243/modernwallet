@@ -1,9 +1,17 @@
 """Recover original retained review files for this immutable job. No new judgment is made."""
 import hashlib
+import importlib.util
 import json
 import re
 import subprocess
 from pathlib import Path
+
+
+def _decisions_match_review(review, decisions):
+    spec = importlib.util.spec_from_file_location('search_gap_worker', Path(__file__).with_name('worker.py'))
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.decisions_match_review(review, decisions)
 
 def restore(root, packet, intake_sha):
     index = root / '.claude/search-gap-recovery-sources.json'
@@ -41,6 +49,6 @@ def restore(root, packet, intake_sha):
     if (completion['runId']!=packet['runId'] or completion['intakeSha256']!=intake_sha
         or receipt.get('verdict')!='PASS' or not receipt.get('reviewer') or receipt.get('reviewer')==receipt.get('author')
         or receipt['intakeSha256']!=intake_sha or receipt['chartSha256']!=hashlib.sha256((root/completion['chart']).read_bytes()).hexdigest()
-        or receipt['decisionsSha256']!=hashlib.sha256(json.dumps(completion['decisions'],sort_keys=True).encode()).hexdigest()):
+        or not _decisions_match_review(receipt, completion['decisions'])):
         raise ValueError('Restored decision review does not match the original job')
     return {'completionFile':row['completion'],'completionSourceCommit':sources[0]}
